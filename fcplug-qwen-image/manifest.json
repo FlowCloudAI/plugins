@@ -1,0 +1,41 @@
+{
+  "default-model": "qwen-image-2.0-pro",
+  "max-batch-size": 6,
+  "max-prompt-length": 800,
+  "meta": {
+    "agreement-version": 1,
+    "author": "flowcloudai",
+    "description": "Qwen-Image映射",
+    "id": "qwen-image",
+    "kind": "image",
+    "name": "Qwen Image",
+    "url": "https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation",
+    "version": "2.0.0"
+  },
+  "models": [
+    {
+      "id": "qwen-image-2.0-pro"
+    },
+    {
+      "id": "qwen-image-2.0"
+    },
+    {
+      "id": "qwen-image-max"
+    },
+    {
+      "id": "qwen-image-plus"
+    }
+  ],
+  "supported-formats": [
+    "png"
+  ],
+  "supported-sizes": [
+    "2048*2048",
+    "2688*1536",
+    "1536*2688",
+    "2368*1728",
+    "1728*2368"
+  ],
+  "supports-image-to-image": true,
+  "supports-negative-prompt": true
+}

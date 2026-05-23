@@ -1,0 +1,62 @@
+{
+  "default-model": "qwen3-tts-flash",
+  "default-voice": "Cherry",
+  "max-characters": 512,
+  "meta": {
+    "agreement-version": 1,
+    "author": "flowcloudai",
+    "description": "Qwen3-TTS adapter",
+    "id": "qwen-tts",
+    "kind": "tts",
+    "name": "Qwen TTS",
+    "url": "https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation",
+    "version": "2.0.0"
+  },
+  "models": [
+    {
+      "id": "qwen3-tts-flash"
+    },
+    {
+      "id": "qwen3-tts-instruct-flash"
+    }
+  ],
+  "supported-formats": [
+    "wav"
+  ],
+  "supported-languages": [
+    "Chinese",
+    "English",
+    "Japanese",
+    "Korean"
+  ],
+  "supports-emotion": false,
+  "supports-ssml": false,
+  "supports-voice-modify": false,
+  "voices": [
+    {
+      "gender": "female",
+      "id": "Cherry",
+      "language": [
+        "Chinese",
+        "English"
+      ],
+      "name": "Cherry"
+    },
+    {
+      "gender": "female",
+      "id": "Serena",
+      "language": [
+        "English"
+      ],
+      "name": "Serena"
+    },
+    {
+      "gender": "male",
+      "id": "Ethan",
+      "language": [
+        "English"
+      ],
+      "name": "Ethan"
+    }
+  ]
+}

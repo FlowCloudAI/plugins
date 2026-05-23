@@ -1,0 +1,28 @@
+{
+  "default-model": "qwen3.5-flash",
+  "default-supports": {
+    "stream": true,
+    "thinking": true,
+    "tools": true
+  },
+  "meta": {
+    "agreement-version": 1,
+    "author": "flowcloudai",
+    "description": "Qwen桥接器",
+    "id": "qwen-llm",
+    "kind": "llm",
+    "name": "Qwen LLM",
+    "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "version": "2.0.0"
+  },
+  "models": [
+    {
+      "id": "qwen3.5-plus",
+      "max-output-tokens": 8192
+    },
+    {
+      "id": "qwen3.5-flash",
+      "max-output-tokens": 8192
+    }
+  ]
+}

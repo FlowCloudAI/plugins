@@ -1,0 +1,28 @@
+{
+  "default-model": "deepseek-v4-pro",
+  "default-supports": {
+    "stream": true,
+    "thinking": true,
+    "tools": true
+  },
+  "meta": {
+    "agreement-version": 1,
+    "author": "flowcloudai",
+    "description": "DeepSeek桥接器",
+    "id": "deepseek-llm",
+    "kind": "llm",
+    "name": "DeepSeek LLM",
+    "url": "https://api.deepseek.com/chat/completions",
+    "version": "2.0.0"
+  },
+  "models": [
+    {
+      "id": "deepseek-v4-flash",
+      "max-output-tokens": 8192
+    },
+    {
+      "id": "deepseek-v4-pro",
+      "max-output-tokens": 8192
+    }
+  ]
+}
