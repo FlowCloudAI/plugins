@@ -31,7 +31,23 @@ impl Guest for DeepSeekMapper {
             obj.remove("tool_choice");
         }
 
-        // ── 2. stream_options 自动补全 ──
+        // ── 2. 映射 thinking_effort → DeepSeek reasoning_effort ──
+        // DeepSeek V4 官方只提供 high / max；为兼容现有枚举，low 和 medium 按 high 处理，xhigh 按 max 处理。
+        if let Some(effort) = obj
+            .remove("thinking_effort")
+            .and_then(|value| value.as_str().map(str::to_string))
+        {
+            let reasoning_effort = match effort.as_str() {
+                "low" | "medium" | "high" => Some("high"),
+                "xhigh" => Some("max"),
+                _ => None,
+            };
+            if let Some(value) = reasoning_effort {
+                obj.insert("reasoning_effort".into(), json!(value));
+            }
+        }
+
+        // ── 3. stream_options 自动补全 ──
         let is_stream = obj
             .get("stream")
             .and_then(|s| s.as_bool())
@@ -41,7 +57,7 @@ impl Guest for DeepSeekMapper {
             obj.insert("stream_options".into(), json!({"include_usage": true}));
         }
 
-        // ── 3. 清理值为 null 的可选字段 ──
+        // ── 4. 清理值为 null 的可选字段 ──
         let null_keys: Vec<String> = obj
             .iter()
             .filter(|(_, v)| v.is_null())

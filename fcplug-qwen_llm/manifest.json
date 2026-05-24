@@ -18,11 +18,13 @@
   "models": [
     {
       "id": "qwen3.5-plus",
-      "max-output-tokens": 8192
+      "context-window-tokens": 1000000,
+      "max-output-tokens": 65536
     },
     {
       "id": "qwen3.5-flash",
-      "max-output-tokens": 8192
+      "context-window-tokens": 1000000,
+      "max-output-tokens": 65536
     }
   ]
 }

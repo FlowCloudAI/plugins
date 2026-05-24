@@ -5,6 +5,12 @@
     "thinking": true,
     "tools": true
   },
+  "default-thinking-efforts": [
+    "low",
+    "medium",
+    "high",
+    "xhigh"
+  ],
   "meta": {
     "agreement-version": 1,
     "author": "flowcloudai",
@@ -18,11 +24,13 @@
   "models": [
     {
       "id": "deepseek-v4-flash",
-      "max-output-tokens": 8192
+      "context-window-tokens": 1000000,
+      "max-output-tokens": 393216
     },
     {
       "id": "deepseek-v4-pro",
-      "max-output-tokens": 8192
+      "context-window-tokens": 1000000,
+      "max-output-tokens": 393216
     }
   ]
 }
