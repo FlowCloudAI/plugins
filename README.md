@@ -1,28 +1,47 @@
-# FlowCloudAI 插件源码
+# 官方插件仓库（plugins）
 
-本仓库保存 FlowCloudAI 官方示例与内置插件源码。插件通过 `cargo-fcplug` 构建为 `.fcplug` 包，供 FlowCloudAI 桌面端加载。
+`plugins` 存放 FlowCloudAI 官方插件示例源码，覆盖 DeepSeek LLM、Qwen LLM、图像与 TTS 能力。  
+仓库用于快速复现 `.fcplug` 构建与发布约定，并验证不同模型能力在桌面端的接入一致性。
 
-## 插件列表
+## 快速开始
 
-| 目录 | 说明 |
-|------|------|
-| `fcplug-deepseek-llm/` | DeepSeek LLM 插件 |
-| `fcplug-qwen_llm/` | 通义千问 LLM 插件 |
-| `fcplug-qwen-image/` | 通义千问图像生成插件 |
-| `fcplug-qwen-tts/` | 通义千问 TTS 插件 |
-
-## 构建
-
-进入任一插件目录后执行：
+### 构建插件
 
 ```bash
-cargo fcplug build
+cd plugins
+cd fcplug-deepseek-llm && cargo fcplug build
+cd ../fcplug-qwen_llm && cargo fcplug build
+cd ../fcplug-qwen-image && cargo fcplug build
+cd ../fcplug-qwen-tts && cargo fcplug build
 ```
 
-构建产物位于各插件的 `dist/` 目录，该目录不会提交到仓库。
+### 最小示例
 
-## 注意事项
+1. 按顺序构建 4 个子插件。  
+2. 检查每个子目录是否生成 `manifest.json`、`plugin.wasm` 与 `icon` 资源。  
+3. 在 `app_main` 中加载对应插件，执行一次端到端 AI 能力调用验证。
 
-- 插件 API Key 由宿主应用通过安全存储管理，源码和 manifest 中不得写入真实密钥。
-- 插件目标平台为 `wasm32-wasip2`。
-- 修改 WIT 或 manifest 协议时，需要同步检查宿主侧 `core_ai_client` 的协议常量与加载逻辑。
+## 主要功能 / 使用方式
+
+- 多模型能力示例：LLM、图像、TTS。  
+- 统一目录约定与构建方式（`cargo fcplug build`）。  
+- 可作为自定义插件开发的起点模板。  
+
+## 技术栈
+
+- Rust、WASM、`tool_fcplug`、`.fcplug` 插件协议。  
+
+## 目录结构（仅顶层）
+
+```text
+plugins/
+├── fcplug-deepseek-llm
+├── fcplug-qwen_llm
+├── fcplug-qwen-image
+└── fcplug-qwen-tts
+```
+
+## 许可证与贡献方式
+
+以仓库许可为准。  
+提交前补充构建输出、测试场景与兼容风险说明。
