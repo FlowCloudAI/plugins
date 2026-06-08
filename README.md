@@ -1,12 +1,9 @@
 # 官方插件仓库（plugins）
 
-`plugins` 存放 FlowCloudAI 官方 `.fcplug` 示例源码，覆盖 DeepSeek、Qwen LLM、Qwen 图像与 Qwen TTS。  
-仓库用于统一校验 `tool_fcplug` 构建链路与客户端兼容行为。
-
 ## 项目简介
 
-各插件共享统一构建入口（`cargo fcplug build`），便于在能力改造时快速复现完整链路。  
-建议在本仓库完成构建再回归 `app_main` 与 `core_ai_client` 集成。
+`plugins` 存放 FlowCloudAI 官方 `.fcplug` 示例源码，覆盖 DeepSeek、Qwen LLM、Qwen 图片与 Qwen TTS。  
+仓库用于统一校验 `tool_fcplug` 构建链路与客户端兼容行为。
 
 ## 快速开始
 
@@ -28,9 +25,9 @@ cd ../fcplug-qwen-tts && cargo fcplug build
 
 ## 主要功能 / 使用方式
 
-- 官方 LLM、图像、TTS 示例能力。  
-- `.fcplug` 构建与更新一致性校验。  
-- 自定义插件开发参考基线。  
+- 官方 LLM、图片、TTS 示例能力。  
+- `.fcplug` 构建与兼容性校验。  
+- 自定义插件开发对齐参考基线。  
 
 ## 技术栈
 
@@ -52,4 +49,4 @@ plugins/
 - PR 建议补充 `cargo fcplug build` 结果与复现步骤。  
 - 兼容性改动需说明 manifest 变更与加载策略。  
 
-文档同步时间：2026-06-05 12:44:21 +08:00
+文档同步时间：2026-06-08 13:20:10 +08:00

@@ -5,6 +5,7 @@ dist/
 # 编辑器和本机工具配置
 .idea/
 .gpm/
+.codegraph/
 
 # 本地环境与密钥
 .env
