@@ -1,0 +1,118 @@
+{
+  "default-model": "speech-2.8-hd",
+  "default-voice": "male-qn-qingse",
+  "max-characters": 10000,
+  "meta": {
+    "agreement-version": 1,
+    "author": "flowcloudai",
+    "description": "MiniMax 同步语音合成插件",
+    "id": "minimax-tts",
+    "kind": "tts",
+    "name": "MiniMax TTS",
+    "url": "https://api.minimaxi.com/v1/t2a_v2",
+    "version": "1.0.0"
+  },
+  "models": [
+    { "id": "speech-2.8-hd" },
+    { "id": "speech-2.8-turbo" },
+    { "id": "speech-2.6-hd" },
+    { "id": "speech-2.6-turbo" },
+    { "id": "speech-02-hd" },
+    { "id": "speech-02-turbo" },
+    { "id": "speech-01-hd" },
+    { "id": "speech-01-turbo" }
+  ],
+  "supported-formats": [
+    "mp3",
+    "wav",
+    "flac",
+    "pcm"
+  ],
+  "supported-languages": [
+    "Chinese",
+    "Cantonese",
+    "English",
+    "Japanese",
+    "Korean",
+    "Spanish",
+    "Portuguese",
+    "French"
+  ],
+  "supports-emotion": true,
+  "supports-ssml": false,
+  "supports-voice-modify": true,
+  "voices": [
+    {
+      "gender": "male",
+      "id": "male-qn-qingse",
+      "language": ["Chinese"],
+      "name": "青涩青年"
+    },
+    {
+      "gender": "male",
+      "id": "male-qn-jingying",
+      "language": ["Chinese"],
+      "name": "精英青年"
+    },
+    {
+      "gender": "female",
+      "id": "female-shaonv",
+      "language": ["Chinese"],
+      "name": "少女"
+    },
+    {
+      "gender": "female",
+      "id": "female-yujie",
+      "language": ["Chinese"],
+      "name": "御姐"
+    },
+    {
+      "gender": "female",
+      "id": "Cantonese_GentleLady",
+      "language": ["Cantonese"],
+      "name": "粤语温柔女声"
+    },
+    {
+      "gender": "male",
+      "id": "Cantonese_PlayfulMan",
+      "language": ["Cantonese"],
+      "name": "粤语活泼男声"
+    },
+    {
+      "gender": "male",
+      "id": "English_Trustworthy_Man",
+      "language": ["English"],
+      "name": "Trustworthy Man"
+    },
+    {
+      "gender": "female",
+      "id": "English_Graceful_Lady",
+      "language": ["English"],
+      "name": "Graceful Lady"
+    },
+    {
+      "gender": "female",
+      "id": "Japanese_KindLady",
+      "language": ["Japanese"],
+      "name": "Kind Lady"
+    },
+    {
+      "gender": "male",
+      "id": "Japanese_GentleButler",
+      "language": ["Japanese"],
+      "name": "Gentle Butler"
+    },
+    {
+      "gender": "female",
+      "id": "Korean_SweetGirl",
+      "language": ["Korean"],
+      "name": "Sweet Girl"
+    },
+    {
+      "gender": "male",
+      "id": "Korean_CalmGentleman",
+      "language": ["Korean"],
+      "name": "Calm Gentleman"
+    }
+  ]
+}
