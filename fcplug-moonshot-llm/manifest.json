@@ -1,0 +1,53 @@
+{
+  "default-model": "kimi-k2.6",
+  "default-supports": {
+    "stream": true,
+    "structured-output": true,
+    "thinking": false,
+    "tools": true
+  },
+  "meta": {
+    "agreement-version": 1,
+    "author": "flowcloudai",
+    "description": "Moonshot Kimi 文本模型桥接器",
+    "id": "moonshot-llm",
+    "kind": "llm",
+    "name": "Moonshot LLM",
+    "url": "https://api.moonshot.cn/v1/chat/completions",
+    "version": "1.0.0"
+  },
+  "models": [
+    {
+      "id": "kimi-k2.7-code",
+      "context-window-tokens": 262144,
+      "supports": { "thinking": true }
+    },
+    {
+      "id": "kimi-k2.7-code-highspeed",
+      "context-window-tokens": 262144,
+      "supports": { "thinking": true }
+    },
+    {
+      "id": "kimi-k2.6",
+      "context-window-tokens": 262144,
+      "supports": { "thinking": true }
+    },
+    {
+      "id": "kimi-k2.5",
+      "context-window-tokens": 262144,
+      "supports": { "thinking": true }
+    },
+    {
+      "id": "moonshot-v1-8k",
+      "context-window-tokens": 8192
+    },
+    {
+      "id": "moonshot-v1-32k",
+      "context-window-tokens": 32768
+    },
+    {
+      "id": "moonshot-v1-128k",
+      "context-window-tokens": 131072
+    }
+  ]
+}
