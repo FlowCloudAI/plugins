@@ -1,0 +1,59 @@
+{
+  "default-model": "MiniMax-M3",
+  "default-supports": {
+    "stream": true,
+    "thinking": true,
+    "tools": true
+  },
+  "meta": {
+    "agreement-version": 1,
+    "author": "flowcloudai",
+    "description": "MiniMax 文本模型桥接器",
+    "id": "minimax-llm",
+    "kind": "llm",
+    "name": "MiniMax LLM",
+    "url": "https://api.minimaxi.com/v1/chat/completions",
+    "version": "1.0.0"
+  },
+  "models": [
+    {
+      "id": "MiniMax-M3",
+      "context-window-tokens": 1000000
+    },
+    {
+      "id": "MiniMax-M2.7",
+      "context-window-tokens": 204800,
+      "max-output-tokens": 2048
+    },
+    {
+      "id": "MiniMax-M2.7-highspeed",
+      "context-window-tokens": 204800,
+      "max-output-tokens": 2048
+    },
+    {
+      "id": "MiniMax-M2.5",
+      "context-window-tokens": 204800,
+      "max-output-tokens": 2048
+    },
+    {
+      "id": "MiniMax-M2.5-highspeed",
+      "context-window-tokens": 204800,
+      "max-output-tokens": 2048
+    },
+    {
+      "id": "MiniMax-M2.1",
+      "context-window-tokens": 204800,
+      "max-output-tokens": 2048
+    },
+    {
+      "id": "MiniMax-M2.1-highspeed",
+      "context-window-tokens": 204800,
+      "max-output-tokens": 2048
+    },
+    {
+      "id": "MiniMax-M2",
+      "context-window-tokens": 204800,
+      "max-output-tokens": 2048
+    }
+  ]
+}
