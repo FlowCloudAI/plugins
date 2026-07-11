@@ -2,24 +2,24 @@
 
 ## 项目简介
 
-`plugins` 存放 FlowCloudAI 官方 `.fcplug` 示例源码，覆盖 DeepSeek、Qwen LLM、Qwen 图片与 Qwen TTS。  
+`plugins` 存放 FlowCloudAI 官方 `.fcplug` 示例源码，覆盖 DeepSeek、千问、火山方舟、智谱、MiniMax 与 Moonshot。
 仓库用于统一校验 `tool_fcplug` 构建链路与客户端兼容行为。
 
 ## 快速开始
 
 ### 构建全部插件
 
-```bash
-cd plugins
-cd fcplug-deepseek-llm && cargo fcplug build
-cd ../fcplug-qwen_llm && cargo fcplug build
-cd ../fcplug-qwen-image && cargo fcplug build
-cd ../fcplug-qwen-tts && cargo fcplug build
+```powershell
+Get-ChildItem -Directory -Filter "fcplug-*" | ForEach-Object {
+    Push-Location $_.FullName
+    cargo fcplug build
+    Pop-Location
+}
 ```
 
 ### 最小示例
 
-1. 依次构建四个插件。  
+1. 依次构建所需插件。
 2. 检查 `manifest.json` 与 `plugin.wasm` 是否一一对应。  
 3. 在示例客户端执行一次端到端调用验证。  
 
@@ -35,18 +35,21 @@ cd ../fcplug-qwen-tts && cargo fcplug build
 
 ## 目录结构（仅顶层）
 
-```text
-plugins/
-├── fcplug-deepseek-llm
-├── fcplug-qwen_llm
-├── fcplug-qwen-image
-└── fcplug-qwen-tts
-```
+| 厂商 | LLM | 图片 | TTS |
+| --- | --- | --- | --- |
+| DeepSeek | `fcplug-deepseek-llm` | — | — |
+| 千问 | `fcplug-qwen_llm` | `fcplug-qwen-image` | `fcplug-qwen-tts` |
+| 火山方舟 | `fcplug-volcengine-llm` | `fcplug-volcengine-image` | — |
+| 智谱 | `fcplug-zhipu-llm` | `fcplug-zhipu-image` | `fcplug-zhipu-tts` |
+| MiniMax | `fcplug-minimax-llm` | `fcplug-minimax-image` | `fcplug-minimax-tts` |
+| Moonshot | `fcplug-moonshot-llm` | — | — |
+
+火山方舟 TTS 需要额外的应用凭证与非 Bearer 鉴权头，当前插件协议和统一 HTTP 客户端无法仅靠 mapper 安全接入，因此暂未提供。
 
 ## 许可证与贡献方式
 
-- 许可证：本仓库未发现独立 `LICENSE`，按仓库当前授权策略执行。  
+- 许可证：MIT，详见根目录 `LICENSE`。
 - PR 建议补充 `cargo fcplug build` 结果与复现步骤。  
 - 兼容性改动需说明 manifest 变更与加载策略。  
 
-文档同步时间：2026-06-08 13:20:10 +08:00
+文档同步时间：2026-07-11 +08:00
