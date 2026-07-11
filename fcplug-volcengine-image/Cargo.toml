@@ -1,0 +1,11 @@
+[package]
+name = "fcplug_volcengine_image"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wit-bindgen = { version = "0.54.0", features = ["macros"] }

@@ -1,0 +1,43 @@
+{
+  "default-model": "doubao-seedream-5-0-pro-260628",
+  "max-batch-size": 15,
+  "max-prompt-length": 600,
+  "meta": {
+    "agreement-version": 1,
+    "author": "flowcloudai",
+    "description": "火山方舟 Seedream 图片生成插件",
+    "id": "volcengine-image",
+    "kind": "image",
+    "name": "Volcengine Image",
+    "url": "https://ark.cn-beijing.volces.com/api/v3/images/generations",
+    "version": "1.0.0"
+  },
+  "models": [
+    {
+      "id": "doubao-seedream-5-0-pro-260628"
+    },
+    {
+      "id": "doubao-seedream-5-0-260128"
+    },
+    {
+      "id": "doubao-seedream-5-0-lite-260128"
+    },
+    {
+      "id": "doubao-seedream-4-5-251128"
+    },
+    {
+      "id": "doubao-seedream-4-0-250828"
+    }
+  ],
+  "supported-formats": [
+    "png",
+    "jpeg"
+  ],
+  "supported-sizes": [
+    "2K",
+    "3K",
+    "4K"
+  ],
+  "supports-image-to-image": true,
+  "supports-negative-prompt": false
+}
