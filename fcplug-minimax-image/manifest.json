@@ -1,0 +1,34 @@
+{
+  "default-model": "image-01",
+  "max-batch-size": 9,
+  "max-prompt-length": 1500,
+  "meta": {
+    "agreement-version": 1,
+    "author": "flowcloudai",
+    "description": "MiniMax 图片生成插件",
+    "id": "minimax-image",
+    "kind": "image",
+    "name": "MiniMax Image",
+    "url": "https://api.minimaxi.com/v1/image_generation",
+    "version": "1.0.0"
+  },
+  "models": [
+    { "id": "image-01" },
+    { "id": "image-01-live" }
+  ],
+  "supported-formats": [
+    "jpeg"
+  ],
+  "supported-sizes": [
+    "1:1",
+    "16:9",
+    "4:3",
+    "3:2",
+    "2:3",
+    "3:4",
+    "9:16",
+    "21:9"
+  ],
+  "supports-image-to-image": true,
+  "supports-negative-prompt": false
+}
