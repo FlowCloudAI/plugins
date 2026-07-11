@@ -1,0 +1,39 @@
+{
+  "default-model": "glm-image",
+  "max-batch-size": 1,
+  "meta": {
+    "agreement-version": 1,
+    "author": "flowcloudai",
+    "description": "智谱 GLM-Image 与 CogView 图片生成插件",
+    "id": "zhipu-image",
+    "kind": "image",
+    "name": "Zhipu Image",
+    "url": "https://open.bigmodel.cn/api/paas/v4/images/generations",
+    "version": "1.0.0"
+  },
+  "models": [
+    {
+      "id": "glm-image"
+    },
+    {
+      "id": "cogview-4-250304"
+    },
+    {
+      "id": "cogview-4"
+    },
+    {
+      "id": "cogview-3-flash"
+    }
+  ],
+  "supported-formats": [
+    "png"
+  ],
+  "supported-sizes": [
+    "1024x1024",
+    "1280x1280",
+    "1536x1024",
+    "1024x1536"
+  ],
+  "supports-image-to-image": false,
+  "supports-negative-prompt": false
+}
