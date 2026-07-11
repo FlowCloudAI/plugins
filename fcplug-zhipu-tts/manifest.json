@@ -1,0 +1,66 @@
+{
+  "default-model": "glm-tts",
+  "default-voice": "tongtong",
+  "max-characters": 1024,
+  "meta": {
+    "agreement-version": 1,
+    "author": "flowcloudai",
+    "description": "智谱 GLM-TTS 语音合成插件",
+    "id": "zhipu-tts",
+    "kind": "tts",
+    "name": "Zhipu TTS",
+    "url": "https://open.bigmodel.cn/api/paas/v4/audio/speech",
+    "version": "1.0.0"
+  },
+  "models": [
+    {
+      "id": "glm-tts"
+    }
+  ],
+  "supported-formats": [
+    "pcm"
+  ],
+  "supported-languages": [
+    "Chinese"
+  ],
+  "supports-emotion": false,
+  "supports-ssml": false,
+  "supports-voice-modify": false,
+  "voices": [
+    {
+      "id": "tongtong",
+      "language": ["Chinese"],
+      "name": "彤彤"
+    },
+    {
+      "id": "chuichui",
+      "language": ["Chinese"],
+      "name": "锤锤"
+    },
+    {
+      "id": "xiaochen",
+      "language": ["Chinese"],
+      "name": "小陈"
+    },
+    {
+      "id": "jam",
+      "language": ["Chinese"],
+      "name": "Jam"
+    },
+    {
+      "id": "kazi",
+      "language": ["Chinese"],
+      "name": "Kazi"
+    },
+    {
+      "id": "douji",
+      "language": ["Chinese"],
+      "name": "Douji"
+    },
+    {
+      "id": "luodo",
+      "language": ["Chinese"],
+      "name": "Luodo"
+    }
+  ]
+}
