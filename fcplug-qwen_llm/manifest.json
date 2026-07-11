@@ -1,5 +1,5 @@
 {
-  "default-model": "qwen3.5-flash",
+  "default-model": "qwen3.7-plus",
   "default-supports": {
     "stream": true,
     "thinking": true,
@@ -13,16 +13,21 @@
     "kind": "llm",
     "name": "Qwen LLM",
     "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
-    "version": "2.0.0"
+    "version": "2.1.0"
   },
   "models": [
     {
-      "id": "qwen3.5-plus",
+      "id": "qwen3.7-max",
       "context-window-tokens": 1000000,
       "max-output-tokens": 65536
     },
     {
-      "id": "qwen3.5-flash",
+      "id": "qwen3.7-plus",
+      "context-window-tokens": 1000000,
+      "max-output-tokens": 65536
+    },
+    {
+      "id": "qwen3.6-flash",
       "context-window-tokens": 1000000,
       "max-output-tokens": 65536
     }

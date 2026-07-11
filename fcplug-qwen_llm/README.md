@@ -6,8 +6,9 @@ FlowCloudAI WASM 插件，用于适配阿里云百炼（DashScope）Qwen LLM API
 
 ## 支持模型
 
-- `qwen3.5-plus`
-- `qwen3.5-flash`
+- `qwen3.7-max`
+- `qwen3.7-plus`
+- `qwen3.6-flash`
 
 ---
 

@@ -8,6 +8,8 @@ FlowCloudAI WASM 插件，用于适配阿里云百炼（DashScope）Qwen 语音�
 
 - `qwen3-tts-flash`
 - `qwen3-tts-instruct-flash`
+- `qwen3-tts-instruct-flash-2026-01-26`
+- `qwen3-tts-flash-2025-11-27`
 
 ---
 

@@ -10,11 +10,14 @@
     "kind": "image",
     "name": "Qwen Image",
     "url": "https://dashscope.aliyuncs.com/api/v1/services/aigc/multimodal-generation/generation",
-    "version": "2.0.0"
+    "version": "2.1.0"
   },
   "models": [
     {
       "id": "qwen-image-2.0-pro"
+    },
+    {
+      "id": "qwen-image-2.0-pro-2026-06-22"
     },
     {
       "id": "qwen-image-2.0"

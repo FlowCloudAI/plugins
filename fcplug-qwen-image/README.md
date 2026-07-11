@@ -7,6 +7,7 @@ FlowCloudAI WASM 插件，用于适配阿里云百炼（DashScope）Qwen 图像�
 ## 支持模型
 
 - `qwen-image-2.0-pro`
+- `qwen-image-2.0-pro-2026-06-22`
 - `qwen-image-2.0`
 - `qwen-image-max`
 - `qwen-image-plus`
