@@ -24,8 +24,7 @@ impl Guest for ZhipuTtsPlugin {
             "volume": voice_setting.get("vol").and_then(Value::as_f64).unwrap_or(1.0),
             "stream": true,
             "encode_format": "hex",
-            "response_format": "pcm",
-            "watermark_enabled": false
+            "response_format": "pcm"
         });
 
         serde_json::to_string(&request).unwrap_or(input)
@@ -130,7 +129,6 @@ mod tests {
         assert_eq!(request["input"], "你好");
         assert_eq!(request["stream"], true);
         assert_eq!(request["encode_format"], "hex");
-        assert_eq!(request["watermark_enabled"], false);
 
         let response = ZhipuTtsPlugin::map_response(
             concat!(
